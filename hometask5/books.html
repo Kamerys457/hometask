@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+</head>
+<body>
+<form action="http://fe.it-academy.by/TestForm.php" method="POST">
+    User name:<br/>
+    <input class="f1"
+           type="text"
+           name="username"
+           placeholder="name"
+           required
+           pattern="[A-Za-z]{5-12}"/> <br/>
+    User password:<br/>​
+    <input class="f1"
+           type="password"
+           name="psw"
+           placeholder="password"
+           pattern="[A-Za-z-0-9]{7}"
+           required><br/>
+    Ваше Имя <br/>
+    <input class="f1"
+           type="text"
+           name="name"
+           required><br/>
+    Ваше Фамилия <br/>
+    <input class="f1"
+           type="text"
+           name="surname"
+           required><br/>
+    Ваше Отчество<br/>
+    <input class="f1"
+           type="text"
+           name="patronymic"
+           required><br/>
+    Ваш E-mail <br>
+    <input class="f1"
+           type="email"
+           name="mail"
+           required
+           placeholder="dima.shulga@mail.ru" ><br/>
+    Ваш Телефон<br/>
+    <input class="f1"
+           type="tel"
+           name="tell"
+           pattern="\+[0-9]{3}-[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+           required
+           placeholder="+375-29-627-52-21"><br/>
+    Выберите город<br/>
+    <div class="f2">
+    <input name="town" type="radio" value="1">Минск<br/>
+    <input name="town" type="radio" value="2">Брест<br/>
+    <input name="town" type="radio" value="3">Гродно<br/>
+    <input name="town" type="radio" value="4">Гомель<br/>
+    <input name="town" type="radio" value="5">Могилёв<br/>
+    <input name="town" type="radio" value="6">Витебск<br/>
+    </div>
+    Выберите книгу:<br/>
+    <div class="f3">
+    <input name="book1" type="checkbox" value="1">Цифровая крепость<br/>
+    <input name="book2" type="checkbox" value="2">Ангелы и демоны<br/>
+    <input name="book3" type="checkbox" value="3">Точка обмана<br/>
+    <input name="book4" type="checkbox" value="4"> Код да Винчи<br/>
+    <input name="book5" type="checkbox" value="5">Утраченный символ<br/><br/>
+    <textarea name="comment" placeholder="оставьте ваш отзыв"></textarea><br/>
+    <input type="submit" formtarget="_blank"/>
+    <input type="reset" value="Отменить ввод"/>
+    </div>
+</form>
+</body>
+</html>
